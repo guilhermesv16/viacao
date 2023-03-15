@@ -24,7 +24,7 @@ public class PassagemModel {
     private Integer assento; // ASSENTO DO PASSAGEIRO
 
     @ManyToOne
-    @JoinColumn(name = "id_viacao", referencedColumnName = "id")
+    @JoinColumn(name = "id_viacao")
     private ViacaoModel viacao; // VIACAO VINCULADA A PASSAGEM (N PASSAGENS PODEM PERTENCE A 1 VIACAO)
 
     // GETTERS E SETTERS DA CLASSE PASSAGEMMODEL.JAVA

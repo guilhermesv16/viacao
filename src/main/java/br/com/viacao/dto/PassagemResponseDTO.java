@@ -1,5 +1,6 @@
 package br.com.viacao.dto;
 
+import java.util.HashMap;
 import java.util.Map;
 
 import br.com.viacao.model.PassagemModel;
@@ -19,6 +20,8 @@ public class PassagemResponseDTO {
         this.origem = passagemModel.getOrigem();
         this.destino = passagemModel.getDestino();
         this.assento = passagemModel.getAssento();
+        
+        this.viacao = new HashMap<String, Object>();
         this.viacao.put("nome", passagemModel.getViacao().getNome());
     }
 
